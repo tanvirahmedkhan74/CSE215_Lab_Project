@@ -1,0 +1,13 @@
+Add Web, Mysql, JPA dependencies First
+
+###
+Create a Model Package 
+--> Getter, Setter , Connection with Database
+###
+Create a Repository Package
+--> Create a Java Interface 
+// For Implenting JPA
+
+###
+Create a Controller Package
+--> For handling all HTTP methods and requests as GET POST
