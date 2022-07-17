@@ -1,0 +1,71 @@
+--> main.tex
+\documentclass{report}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{blindtext}
+\usepackage[skip=10pt plus1pt, indent=40pt]{parskip}
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+\begin{titlepage}
+\begin{figure}[t]
+    \centering
+    \includegraphics[width=5cm]{images/north-south-university-logo-0CA3A4611D-seeklogo.com.png}
+\end{figure}
+\title{\HRule\\[0.5cm]
+  \textsc{\Huge Meet@NSU}
+  \HRule\\[1cm]
+\huge North South University\\\Large Department of Electrical and Computer Engineering\\\Large Project Proposal\\ \\ \large CSE215 - Java Programming Language\\\large Course Faculty: Mr. Tarek Mizan\\Lab Instructor: Nazmul Alam Diptu}
+\author{
+\Large {Tanvir Ahmed Khan \\\Large Md.Shazzad Haque \\\Large Tasneem Abdullah Aurnobb \\ \itshape{Section - 12\\ \itshape Summer 2022}\\}
+}
+\date{\Large 17 July, 2022}
+\end{titlepage}
+\begin{document}
+\maketitle
+\tableofcontents
+\chapter*{Dedicated To}
+\sffamily \LARGE{To every student of Our University.\\ \\ May you never feel Alone amid this wonderful Campus filled with Students with Unlimited Potentials}
+\include{introduction}
+\include{objective}
+\include{target}
+\include{webAppDesc}
+\include{toolsAndResources}
+\include{challenge}
+\end{document}
+
+
+---> Objective.tex
+\chapter{Objective}
+\sffamily{
+\begin{itemize}
+    \item Meeting New People in The Blink Of an Eye
+    \item Collaborating with other Students
+    \item Hanging out with new People withing the University
+    \item Saying Goodbye to the Monotonous Life
+    \item Learning new Culture and Lifestyle
+\end{itemize}
+}
+
+-----> toolsAndResources.tex
+
+\chapter{Tools and Resources}
+\sffamily{
+\begin{itemize}
+    \item \LARGE Java
+    \item \LARGE JSP
+    \item \LARGE Java Spring Boot
+    \item \LARGE Bootstrap, CSS
+    \item \LARGE MySql
+    \item \LARGE CRUD
+    \section*{In-Future Possible Extensions}
+    \item React JS
+    \item REST API
+    \item WebSocket
+\end{itemize}
+}
+
+---->Objective.tex
+
+
+
+
+---->Challenge.tex
