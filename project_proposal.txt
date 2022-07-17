@@ -1,4 +1,5 @@
 --> main.tex
+
 \documentclass{report}
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
@@ -34,6 +35,7 @@
 
 
 ---> Objective.tex
+
 \chapter{Objective}
 \sffamily{
 \begin{itemize}
@@ -63,9 +65,42 @@
 \end{itemize}
 }
 
----->Objective.tex
+---->target.tex
+
+\chapter{Target Customers}
+\sffamily{
+\begin{itemize}
+    \item \LARGE University Students - Each and Every Students of North South University
+\end{itemize}
+}
+
+\section*{\huge Value Proposition}
+\sffamily{\LARGE Our Web Application will Break the Awkwardness between The Students When They are Eager to make Friends but Not Comfortable enough to Speak up infront of somene at First. This App will help Everyone to Stay Connected Only Using The Application. Without any hassle, with the help of Advance Algorithm, Students can Meet New Random People with just a touch of a Button}
+
 
 
 
 
 ---->Challenge.tex
+
+\chapter{Challenge}
+\sffamily{
+    \Large Considering the Number of Students and their activity, Maintaining Large Data and Customizing Complex Algorithm According to the User's Comfort will be Very Challenging for Us \\ Ensuring Privacy and Security as One will meet many Random People, will be costly and somewhat challenging\\With the Growth of the Application, Maintaining the Server and new Features Might Affect on the Academics of the Creator who are still Pursuing Graduation
+    
+}
+
+
+
+----> webAppDesc.tex
+
+\chapter{Web Application Feature and Description}
+\sffamily{
+Our Applications Brings Many Interesting Functionality \\
+
+\begin{itemize}
+    \item Registration Using the Email
+    \item Adding New Friends
+    \item Random Friend Generator
+    \item Beautiful GUI and Robust Security
+\end{itemize}
+}
