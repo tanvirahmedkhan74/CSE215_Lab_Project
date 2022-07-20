@@ -124,7 +124,7 @@ Nazmul Alam Diptu\\
 North South UNIVERSITY\\
 
 (North South University) \\
-Bashundhara R/A, Dhaka \\
+,Plot # 15, Bashundhara R/A, Dhaka- 1229 \\
 \textbf{JULY 2022}\\
 \end{center}
 
@@ -139,63 +139,29 @@ Bashundhara R/A, Dhaka \\
 
 \begin{center}
 %\vspace{1.5cm}
-\textbf{DEPT. OF COMPUTER SCIENCE \& ENGINEERING}\\
+\textbf{DEPT. OF Electrical and Computer \& ENGINEERING}\\
 
-DELHI TECHNOLOGICAL UNIVERSITY \\
-(Formerly Delhi College of Engineering) \\
-Bawana Road, Delhi-110042\\
+NORTH SOUTH UNIVERSITY \\
+Plot # 15, Bashundhara R/A, Dhaka- 1229\\
 \end{center}
 
 \vspace{2cm}
-\begin{center}
- \textbf{\underline {CERTIFICATE}}
- \addcontentsline{toc}{chapter}{Certificate}
-\end{center}
-I hereby certify that the Project titled "Title of report” which is submitted by Loreum Ipsum (2KXX/XX/XXX), Loreum Ipsum (2KXX/XX/XXX) \& Loreum Ipsum (2KXX/XX/XXX) for fulfillment of the requirements for awarding of the degree of Bachelor of Technology (B.tech) is a record of the project work carried out by the students under my guidance \& supervision. To the best of my knowledge, this work has not been submitted in any part or fulfillment for any Degree or Diploma to this University or elsewhere.
-
 \noindent \begin{minipage}{4cm}
 \begin{flushleft}
 \vspace{1 cm}
                          
-Place : New Delhi \\
+Place : Dhaka \\
 Date : 11/05/2022 \\
 
 \end{flushleft} 
 \end{minipage}
 \hfill
-\begin{minipage}{10cm}
-\begin{flushright}                                      
-\vspace{2cm}
-                         
-
-\vspace{.8cm}
-\textbf{Prof.(Dr.) Name Of supervisor}\\
-\textbf{(SUPERVISOR)}\\
-Professor\\
-Department of ....... \\
-Delhi Technological University\\
-\end{flushright} 
-\end{minipage}
 % \thispagestyle{empty}
 
 \newpage
 % Please remove and edit percentage(%) Symbol, if you want this Acknowledgement page in your report. As per ktu guideline, this page is not necessary. 
 
 % \begin{abstract}
-
-\begin{center}
- \textbf{ABSTRACT}
- \addcontentsline{toc}{chapter}{Abstract}
-\end{center}
-
-\textbf{Keywords} - Lorem Ipsum , Lorem Ipsum 
-
-\vspace{0.8cm}
-
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-%  \end{abstract} 
 
 \newpage
 \addcontentsline{toc}{chapter}{Acknowledgement}
@@ -204,7 +170,7 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 
 The successful completion of any task is incomplete and meaningless without giving any due credit to the people who made it possible without which the project would not have been successful and would have existed in theory.
 
-First and foremost, we are grateful to \textbf{Dr. ......}, HOD, Department of .................., Delhi Technological University, and all other faculty members of our department for their constant guidance and support, constant motivation and sincere support and gratitude for this project work. We owe a lot of thanks to our supervisor, \textbf{Dr. .................}, Professor, Department of Computer Science, Delhi Technological University for igniting and constantly motivating us and guiding us in the idea of a creatively and amazingly performed Major Project in undertaking this endeavor and challenge and also for being there whenever we needed his guidance or assistance.
+First and foremost, we are grateful to \textbf{Mr.Tarek Mizan}, Lecturer, Department of Electrical and Computer Engeneering, North South University, and all other faculty members of our department for their constant guidance and support, constant motivation and sincere support and gratitude for this project work. We owe a lot of thanks to our supervisor, \textbf{Nazmul Alam Diptu}, Lab Instructor, Department of Electrical and Computer Science, North South University for igniting and constantly motivating us and guiding us in the idea of a creatively and amazingly performed Major Project in undertaking this endeavor and challenge and also for being there whenever we needed his guidance or assistance.
 
 
 We would also like to take this moment to show our thanks and gratitude to one and all, who indirectly or directly have given us their hand in this challenging task. We feel happy and joyful and content in expressing our vote of thanks to all those who have helped us and guided us in presenting this project work for our Major project. Last, but never least, we thank our well-wishers and parents for always being with us, in every sense and constantly supporting us in every possible sense whenever possible.
