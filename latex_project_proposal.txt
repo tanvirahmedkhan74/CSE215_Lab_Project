@@ -242,4 +242,28 @@ We would also like to take this moment to show our thanks and gratitude to one a
 \end{document}
 
 
+\chapter{Introduction}
+\section{Origin if \textbf{Meet@NSU}}
+\\North South University is a Reputed University with Thousands of students who are studying in various Departments.As this is an University with Open Credit system, we get chances to meet new people at our University. \\ \\However, Many of us don't feel comfortable starting a conversation with a random coursemate or faces difficulties while expressing their thoughts \\ \\ For this, we felt a need of an application, which could bring every student closer by exploring various minds Online without hesitating and feeling to choose a friend.
+
+\chapter{Objective}
+\sffamily{
+\begin{itemize}
+    \item Meeting New People in The Blink Of an Eye
+    \item Collaborating with other Students
+    \item Hanging out with new People withing the University
+    \item Saying Goodbye to the Monotonous Life
+    \item Learning new Culture and Lifestyle
+\end{itemize}
+}
+\chapter{Target Customers}
+\sffamily{
+\begin{itemize}
+    \item \LARGE University Students - Each and Every Students of North South University
+\end{itemize}
+}
+
+\section*{\huge Value Proposition}
+\sffamily{\LARGE Our Web Application will Break the Awkwardness between The Students When They are Eager to make Friends but Not Comfortable enough to Speak up infront of somene at First. This App will help Everyone to Stay Connected Only Using The Application. Without any hassle, with the help of Advance Algorithm, Students can Meet New Random People with just a touch of a Button}
+
 
