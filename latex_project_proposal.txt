@@ -21,6 +21,18 @@ https://www.overleaf.com/2682952191xwnphffqfzjb
  top=25mm,
  bottom=25mm,
  }
+ \newcommand{\Answer}[1]{\smash{\begin{tabular}{l} \hline #1 \\ \hline \end{tabular}\hspace*{-\tabcolsep}}}
+%  \usepackage{xcolor}
+ \usepackage[dvipsnames]{xcolor}
+ \usepackage{hyperref}
+ \hypersetup{
+    colorlinks=true,
+    linkcolor=teal,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdftitle={Overleaf Example},
+    pdfpagemode=FullScreen,
+    }
 % \usepackage{fontspec}
 \usepackage{tocloft}
 \makeatletter
@@ -75,21 +87,23 @@ https://www.overleaf.com/2682952191xwnphffqfzjb
 \begin{document}
 
 \begin{center}
-{\Large \textbf{Meet@NSU}}\\
+\Answer
+{\Large \color{Brown} \textbf{\sffamily Meet@NSU}}\\
 \vspace{0.5cm}
 
-A GEOSOCIAL NETWORKING APPLICATION\\
-CSE215: JAVA PROGRAMMING LANGUAGE\\
-SECTION: 12\\
-SUMMER 2022\\
-SEMESTER FINAL PROJECT \\
-IN\\
-\textbf{COMPUTER SCIENCE AND ENGENEERING} \\
+\textbf{\sffamily A GEOSOCIAL NETWORKING APPLICATION}\\
+\textbf{\sffamily CSE215} : \sffamily JAVA PROGRAMMING LANGUAGE\\
+\textbf \sffamily {SECTION}: 12\\
+\textbf \sffamily {SUMMER 2022}\\
+\sffamily SEMESTER FINAL PROJECT \\
+\sffamily IN\\
+\textbf{\sffamily COMPUTER SCIENCE AND ENGENEERING} \\
 \vspace{1 cm}
 Submitted by: \\
 
 % \begin{multicols}{3}
 % \vspace{1cm}
+\sffamily{
 \textbf{Tanvir Ahmed Khan}
 % \vspace{0.2cm}
 \textbf{(2131491642)}\\
@@ -108,9 +122,10 @@ Submitted by: \\
 \vspace{0.2cm}
 % \end{multicols}
 \vspace{1 cm}
-Under the supervision of\\
+}
+\sffamily Under the supervision of\\
 
-Nazmul Alam Diptu\\
+\color{BrickRed}\sffamily Nazmul Alam Diptu\\
 
 \end{center}
 
@@ -121,13 +136,15 @@ Nazmul Alam Diptu\\
     \includegraphics[scale=0.4]{logo.png}
     \label{fig:DTU logo}
 \end{figure}
+\sffamily{
 \textbf{DEPT. OF Electrical and Computer Engeneering}\\
 
-North South UNIVERSITY\\
+NORTH SOUTH UNIVERSITY\\
 
 (North South University) \\
-,Plot # 15, Bashundhara R/A, Dhaka- 1229 \\
+Plot 15, Bashundhara R/A, Dhaka- 1229 \\
 \textbf{JULY 2022}\\
+}
 \end{center}
 
 \thispagestyle{empty}
@@ -141,20 +158,23 @@ North South UNIVERSITY\\
 
 \begin{center}
 %\vspace{1.5cm}
-\textbf{DEPT. OF Electrical and Computer \& ENGINEERING}\\
+\sffamily{
+\textbf{DEPT. OF ELECTRICAL \& COMPUTER ENGINEERING}\\
 
 NORTH SOUTH UNIVERSITY \\
-Plot # 15, Bashundhara R/A, Dhaka- 1229\\
+Plot 15, Bashundhara R/A, Dhaka- 1229\\
+}
 \end{center}
 
 \vspace{2cm}
 \noindent \begin{minipage}{4cm}
 \begin{flushleft}
 \vspace{1 cm}
-                         
+\sffamily {                    
 Place : Dhaka \\
 Date : 11/05/2022 \\
-
+GitHub : \href{https://github.com/tanvirahmedkhan74/CSE215_Lab_Project/blob/b202d8edbe09017930615fe2475cd9d2b1927f1f/latex_project_proposal.txt}{Click Here}
+}
 \end{flushleft} 
 \end{minipage}
 \hfill
@@ -168,22 +188,23 @@ Date : 11/05/2022 \\
 \newpage
 \addcontentsline{toc}{chapter}{Acknowledgement}
 
-\chapter*{\centering \large ACKNOWLEDGEMENT\markboth{Acknowledgements}{Acknowledgements}}
-
+\chapter*{\centering \large
+ACKNOWLEDGEMENT\markboth{Acknowledgements}{Acknowledgements}}
+\sffamily{
 The successful completion of any task is incomplete and meaningless without giving any due credit to the people who made it possible without which the project would not have been successful and would have existed in theory.
 
 First and foremost, we are grateful to \textbf{Mr.Tarek Mizan}, Lecturer, Department of Electrical and Computer Engeneering, North South University, and all other faculty members of our department for their constant guidance and support, constant motivation and sincere support and gratitude for this project work. We owe a lot of thanks to our supervisor, \textbf{Nazmul Alam Diptu}, Lab Instructor, Department of Electrical and Computer Science, North South University for igniting and constantly motivating us and guiding us in the idea of a creatively and amazingly performed Major Project in undertaking this endeavor and challenge and also for being there whenever we needed his guidance or assistance.
 
 
 We would also like to take this moment to show our thanks and gratitude to one and all, who indirectly or directly have given us their hand in this challenging task. We feel happy and joyful and content in expressing our vote of thanks to all those who have helped us and guided us in presenting this project work for our Major project. Last, but never least, we thank our well-wishers and parents for always being with us, in every sense and constantly supporting us in every possible sense whenever possible.
-
+}
 
 
 \vspace{2 cm}                        
 \begin{multicols}{3}
 \centering
-\textbf{Loreum Ipsum}
-\textbf{(2KXX/XX/XXX)}\\
+\textbf{Tanvir Ahmed Khan}
+\textbf{(2131491642)}\\
 \vspace{0.3cm}
 
 
@@ -197,11 +218,7 @@ We would also like to take this moment to show our thanks and gratitude to one a
 \vspace{0.3cm}
 \end{multicols}
 
-\tableofcontents %This command used for index.
-
-\begin{itemize}
-  \item[]\textbf{ Sample}  : Sample Text
-\end{itemize}
+\normalsize \tableofcontents %This command used for index.
 
 \vspace{2cm}
 \begin{center}
@@ -212,45 +229,17 @@ We would also like to take this moment to show our thanks and gratitude to one a
 \newpage
 
 \pagenumbering{arabic}    
-\chapter{ INTRODUCTION}
-\section{Overview}
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-
-
-\section{Problem Formulation}
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-
-\section{Objectives}
-\begin{itemize}
-\item Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-\item Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-\item Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-\end{itemize}
-
-\section{Motivation}
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. 
-
-\chapter{BACKGROUND}
-\section{What is ........}
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-
-\chapter{Challenges}
-
-
-\addcontentsline{toc}{chapter}{Appendices}
-\chapter*{\centering \large Appendix\markboth{Appendix}{Appendix}}
-
-\begin{figure}[H]
-\centering
-    \includegraphics[scale=0.40]{dtu.jpg}
-    \label{fig:AIS data}
-\end{figure}
-
-\addcontentsline{toc}{chapter}{References}
-
-\chapter*{\centering \large PAPER ACCEPTANCE PROOF\markboth{PAPER ACCEPTANCE PROOF}{PAPER ACCEPTANCE PROOF}}
-
+\sffamily{
+\large{
+\include{introduction}
+\include{objective}
+\include{target}
+\include{webAppDesc}
+\include{toolsAndResources}
+\include{challenge}
+}
+}
 \end{document}
+
+
 
