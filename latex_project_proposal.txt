@@ -267,3 +267,44 @@ We would also like to take this moment to show our thanks and gratitude to one a
 \sffamily{\LARGE Our Web Application will Break the Awkwardness between The Students When They are Eager to make Friends but Not Comfortable enough to Speak up infront of somene at First. This App will help Everyone to Stay Connected Only Using The Application. Without any hassle, with the help of Advance Algorithm, Students can Meet New Random People with just a touch of a Button}
 
 
+\chapter{Web Application Feature and Description}
+\sffamily{
+\large
+Our Applications Brings Many Interesting Functionality \\
+
+\begin{itemize}
+    \item Registration Using the Email
+    \item Adding New Friends
+    \item Random Friend Generator
+    \item Chat with Friends
+    \item Beautiful GUI and Robust Security
+\end{itemize}
+}
+
+
+\chapter{Tools and Resources}
+\sffamily{
+\begin{itemize}
+    \item \large Java
+    \item \large JSP
+    \item \large Java Spring Boot
+    \item \large Bootstrap, CSS
+    \item \large MySql
+    \item \large CRUD
+    \section*{In-Future Possible Extensions}
+    \item React JS
+    \item REST API
+    \item WebSocket
+\end{itemize}
+}
+
+
+
+\chapter{Challenge}
+\sffamily{
+    \large Maintaining Large Data and Customizing Complex Algorithm According to the User's Comfort will be Very Difficult for Us Considering the Number of Students and Their Activity\\
+As One will Meet Many Random People, Ensuring Privacy and Security Will Be Expensive and Somewhat Difficult\\
+The Academics of the Creator who is still pursuing graduation may be impacted by the growth of the application, upkeep of the server, and addition of new features.
+Also, as this is our first Full Stack Development Project, integrating REST and Spring boot with REACT was pretty difficult.\\
+But we aim to complete this project in the allotted time with the help of Nazmul Alam Diptu Sir's guidelines.
+}
