@@ -111,14 +111,12 @@ Submitted by: \\
 
 % \vspace{1cm}
 \textbf{Md. Shazzad Haque}
-% \vspace{0.2cm}
-\textbf{(2131750642)}\\
+\textbf{(2131750 642)}\\
 % \vspace{0.2cm}
 
 % \vspace{1cm}
-\textbf{Loreum Ipsum}
-% \vspace{0.2cm}
-\textbf{(2KXX/XX/XXX)}\\
+\textbf{Tasneem Abdullah Aurnobb}
+\textbf{(2111752 642)}\\
 \vspace{0.2cm}
 % \end{multicols}
 \vspace{1 cm}
@@ -172,8 +170,8 @@ Plot 15, Bashundhara R/A, Dhaka- 1229\\
 \vspace{1 cm}
 \sffamily {                    
 Place : Dhaka \\
-Date : 11/05/2022 \\
-GitHub : \href{https://github.com/tanvirahmedkhan74/CSE215_Lab_Project/blob/b202d8edbe09017930615fe2475cd9d2b1927f1f/latex_project_proposal.txt}{Click Here}
+Date : 23/07/2022 \\
+GitHub : \href{https://github.com/tanvirahmedkhan74/CSE215_Lab_Project/blob/b10cce9066f67bf4288cf87ca2df440bc2787468/latex_project_proposal.txt}{Click Here}
 }
 \end{flushleft} 
 \end{minipage}
@@ -204,17 +202,17 @@ We would also like to take this moment to show our thanks and gratitude to one a
 \begin{multicols}{3}
 \centering
 \textbf{Tanvir Ahmed Khan}
-\textbf{(2131491642)}\\
+\textbf{(2131491 642)}\\
 \vspace{0.3cm}
 
 
-\textbf{Loreum Ipsum}
-\textbf{(2KXX/XX/XXX)}\\
+\textbf{Md.Shazzad Haque}
+\textbf{(2131750 642)}\\
 \vspace{0.3cm}
 
 
-\textbf{Loreum Ipsum}
-\textbf{(2KXX/XX/XXX)}\\
+\textbf{Tasneem Abdullah Aurnobb}
+\textbf{(2111752 642)}\\
 \vspace{0.3cm}
 \end{multicols}
 
@@ -240,6 +238,8 @@ We would also like to take this moment to show our thanks and gratitude to one a
 }
 }
 \end{document}
+
+
 
 
 \chapter{Introduction}
