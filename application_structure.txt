@@ -1,0 +1,52 @@
+MEET@NSU
+
+--> Create the Sprint Boot Starter project
+--> Dependencies including JPA, WEB, MYSQL
+--> Structure-->
+      project-name : meet_at_nsu
+      
+      Database && Model Layer:
+        Id (Auto generated)
+        Name
+        NSUID
+        NSUEMAIl
+        Address
+        Password
+        Department
+        Semester
+        Favourite Hobby
+        --In future update
+        --Profile Picture
+-->
+    Repostiory:
+    JPA Repository
+-->
+    Service Layer:
+      Dependency Injection : JPA repository
+      Method:
+        Add Student (Registration)
+        Authenticate Student (Login)
+        Generate Random Friend
+              By Random ID
+        Show Friend List
+        Show Profile
+              --Will return the Student data
+-->
+    Dependency Injection : meet_at_nsu_Serivce
+    
+    Controller Layer:
+       -- Add student at (/stduent/add)
+       -- Login Student at (student/login)
+       -- Send back to main menu if failed (/student)
+            # Optional - Return a message for failed
+       -- 
+-- > React JS
+      npx start-react-app meet_at_nsu_frontend 
+      Add Material UI for Homepage
+      Another Page for Registration
+      
+-- > Additional after above are accomplished
+  -- Implementing web socket for chat system
+  -- Tinder Matching mechanism
+  -- Profile Bio Update
+      
