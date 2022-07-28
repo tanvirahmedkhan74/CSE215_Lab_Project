@@ -43,7 +43,7 @@ MEET@NSU
         -- Show new generated friend(student/profile/generate_friend)
         -- Show all Friend (student/profile/allFriend)
 -- > React JS
-      npx start-react-app meet_at_nsu_frontend 
+      npx create-react-app meet_at_nsu_frontend 
       Add Material UI for Homepage
       Another Page for Registration
       
