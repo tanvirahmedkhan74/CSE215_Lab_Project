@@ -39,7 +39,9 @@ MEET@NSU
        -- Login Student at (student/login)
        -- Send back to main menu if failed (/student)
             # Optional - Return a message for failed
-       -- 
+            -- If succesfull route to(/student/profle)
+        -- Show new generated friend(student/profile/generate_friend)
+        -- Show all Friend (student/profile/allFriend)
 -- > React JS
       npx start-react-app meet_at_nsu_frontend 
       Add Material UI for Homepage
