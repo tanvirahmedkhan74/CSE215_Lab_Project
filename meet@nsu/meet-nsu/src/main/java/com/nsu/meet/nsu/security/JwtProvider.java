@@ -48,21 +48,24 @@ public class JwtProvider {
         }
     }
 
-    public boolean validateToken(String jwt){
-        parser().setSigningKey(getPublicKey()).parseClaimsJwt(jwt);
+    public boolean validateToken(String jwt) {
+        parser().setSigningKey(getPublickey()).parseClaimsJws(jwt);
         return true;
     }
 
-    private PublicKey getPublicKey() {
+    private PublicKey getPublickey() {
         try {
             return keyStore.getCertificate("springblog").getPublicKey();
         } catch (KeyStoreException e) {
-            throw new MeetNsuAuthException("Exception occurred while retrieving public key from keystore");
+            throw new MeetNsuAuthException("Exception occured while retrieving public key from keystore");
         }
     }
 
-    public String getUsernameFromJwt(String token){
-        Claims claims = parser().setSigningKey(getPublicKey()).parseClaimsJws(token).getBody();
+    public String getUsernameFromJWT(String token) {
+        Claims claims = parser()
+                .setSigningKey(getPublickey())
+                .parseClaimsJws(token)
+                .getBody();
 
         return claims.getSubject();
     }
