@@ -1,5 +1,7 @@
 package com.campus.meet.NSU.controller;
 
+import com.campus.meet.NSU.dto.AuthenticationResponse;
+import com.campus.meet.NSU.dto.LoginRequest;
 import com.campus.meet.NSU.dto.RegisterRequest;
 import com.campus.meet.NSU.service.AuthService;
 import lombok.AllArgsConstructor;
@@ -19,6 +21,11 @@ public class AuthController {
     public ResponseEntity signup(@RequestBody RegisterRequest registerRequest) {
         authService.signup(registerRequest);
         return new ResponseEntity(OK);
+    }
+
+    @PostMapping("/login")
+    public AuthenticationResponse login(@RequestBody LoginRequest loginRequest) {
+        return authService.login(loginRequest);
     }
 
     @GetMapping("accountVerification/{token}")
