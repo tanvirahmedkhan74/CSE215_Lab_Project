@@ -30,4 +30,11 @@ public class HashTagController {
                 .status(HttpStatus.OK)
                 .body(hashTagService.getAll());
     }
+
+    @GetMapping("/{id}")
+    public ResponseEntity<HashTagDto> getSubreddit(@PathVariable Long id) {
+        return ResponseEntity
+                .status(HttpStatus.OK)
+                .body(hashTagService.getHashTag(id));
+    }
 }

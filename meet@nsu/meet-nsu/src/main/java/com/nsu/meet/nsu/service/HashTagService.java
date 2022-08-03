@@ -1,6 +1,8 @@
 package com.nsu.meet.nsu.service;
 
 import com.nsu.meet.nsu.dto.HashTagDto;
+import com.nsu.meet.nsu.exceptions.MeetNsuAuthException;
+import com.nsu.meet.nsu.mapper.HashTagMapper;
 import com.nsu.meet.nsu.model.HashTag;
 import com.nsu.meet.nsu.repository.HashTagRepository;
 import lombok.AllArgsConstructor;
@@ -16,24 +18,23 @@ import java.util.stream.Collectors;
 @AllArgsConstructor
 public class HashTagService {
     private final HashTagRepository hashTagRepository;
+    private final HashTagMapper hashTagMapper;
     @Transactional
     public HashTagDto save(HashTagDto hashTagDto){
-        HashTag save = hashTagRepository.save(mapHashTagDto(hashTagDto));
+        HashTag save = hashTagRepository.save(hashTagMapper.mapDtoToHashTag(hashTagDto));
         hashTagDto.setId(save.getId());
         return hashTagDto;
     }
 
-    private HashTag mapHashTagDto(HashTagDto hashTagDto) {
-       return HashTag.builder().name(hashTagDto.getName())
-                .description(hashTagDto.getDescription())
-                .build();
-    }
     @Transactional(readOnly = true)
     public List<HashTagDto> getAll() {
-        return hashTagRepository.findAll().stream().map(this::maptToDto).collect(Collectors.toList());
+        return hashTagRepository.findAll().stream().map(hashTagMapper::mapHashTagToDto).collect(Collectors.toList());
     }
 
-    private HashTagDto maptToDto(HashTag hashTag) {
-        return HashTagDto.builder().name(hashTag.getName()).id(hashTag.getId()).numOfPosts(hashTag.getPosts().size()).build();
+    public HashTagDto  getHashTag(Long id) {
+        HashTag hashTag = hashTagRepository.findById(id).orElseThrow(
+                ()-> new MeetNsuAuthException("This HashTag has not been created Yet!")
+        );
+        return hashTagMapper.mapHashTagToDto(hashTag);
     }
 }

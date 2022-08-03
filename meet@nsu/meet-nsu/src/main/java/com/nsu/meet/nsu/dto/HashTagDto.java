@@ -13,5 +13,5 @@ public class HashTagDto {
     private Long id;
     private String name;
     public String description;
-    public Integer numOfPosts;
+    public Integer numberOfPosts;
 }
