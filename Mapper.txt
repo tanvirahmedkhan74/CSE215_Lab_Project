@@ -1,0 +1,4 @@
+Hashtag Mapper - - >
+  Adding mapper to Hashtag Model with HashTagDto to map it autonomously
+  
+    Linking numberOfPosts from HashTagDto with Posts in HashTag Model class and getting the size of the Post List
