@@ -54,9 +54,9 @@ public class PostService {
     }
 
     @Transactional(readOnly = true)
-    public List<PostResponse> getPostsByHashtag(Long subredditId) {
-        Hashtag hashtag = hashtagRepository.findById(subredditId)
-                .orElseThrow(() -> new MeetNsuException(subredditId.toString()));
+    public List<PostResponse> getPostsByHashtag(Long hashtagId) {
+        Hashtag hashtag = hashtagRepository.findById(hashtagId)
+                .orElseThrow(() -> new MeetNsuException(hashtagId.toString()));
         List<Post> posts = postRepository.findAllByHashtag(hashtag);
         return posts.stream().map(postMapper::mapToDto).collect(toList());
     }

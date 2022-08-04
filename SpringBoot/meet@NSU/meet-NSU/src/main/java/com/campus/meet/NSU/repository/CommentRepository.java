@@ -3,7 +3,6 @@ package com.campus.meet.NSU.repository;
 import com.campus.meet.NSU.model.Comment;
 import com.campus.meet.NSU.model.Post;
 import com.campus.meet.NSU.model.User;
-import org.springframework.data.convert.ReadingConverter;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
