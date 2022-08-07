@@ -28,17 +28,16 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 # Project Setup
 
-Angular CLI: 14.1.1 .
-Node: 16.16.0 .
-Package Manager: npm 8.11.0 . 
+Angular CLI: `14.1.1`   
+Node: `16.16.0`    
+Package Manager: npm `8.11.0`    
 
-Angular: .
-... 
+Angular:  
+...  
 
-Package                      Version
-------------------------------------------------------
-@angular-devkit/architect    0.1401.1 (cli-only)
-@angular-devkit/core         14.1.1 (cli-only)
-@angular-devkit/schematics   14.1.1 (cli-only)
-@schematics/angular          14.1.1 (cli-only)
+Package --- >                 Version  
+@angular-devkit/architect    0.1401.1 (cli-only)  
+@angular-devkit/core         14.1.1 (cli-only)  
+@angular-devkit/schematics   14.1.1 (cli-only)  
+@schematics/angular          14.1.1 (cli-only)  
 
