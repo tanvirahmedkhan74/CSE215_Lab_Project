@@ -15,6 +15,7 @@ import static org.springframework.http.ResponseEntity.status;
 @RestController
 @RequestMapping("/api/comments/")
 @AllArgsConstructor
+@CrossOrigin
 public class CommentsController {
 
     private final CommentService commentService;

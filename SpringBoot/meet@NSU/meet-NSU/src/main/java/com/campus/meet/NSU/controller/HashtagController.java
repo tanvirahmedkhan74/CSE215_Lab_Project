@@ -11,6 +11,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/hashtag")
 @AllArgsConstructor
+@CrossOrigin
 public class HashtagController {
 
     private final HashtagService hashtagService;
