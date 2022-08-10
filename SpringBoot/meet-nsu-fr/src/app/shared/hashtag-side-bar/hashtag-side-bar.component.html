@@ -1,0 +1,11 @@
+<div class="sidebar-view-hashtag">
+    <div style="color: black; font-weight: bold">Browse Hashtags</div>
+    <hr />
+    <span *ngFor="let hashtag of hashtags">
+        <span class="hashtag-text"><a href="/view-hashtag/{{hashtag.id}}">{{hashtag.name}}</a></span>
+        <hr />
+    </span>
+    <div style="text-align: center" *ngIf="displayViewAll">
+        <a style="font-weight: bold" routerLink="/list-hashtags">View All</a>
+    </div>
+</div>

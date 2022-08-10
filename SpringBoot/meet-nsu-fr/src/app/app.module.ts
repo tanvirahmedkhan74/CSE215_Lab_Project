@@ -6,25 +6,54 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { SignupComponent } from './auth/signup/signup.component';
 import { ReactiveFormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { LoginComponent } from './auth/login/login.component';
 import { NgxWebstorageModule } from 'ngx-webstorage';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { ToastrModule } from 'ngx-toastr';
+import { HomeComponent } from './home/home.component';
+import { TokenInterceptor } from './token-interceptor';
+import { FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontawesome';
+import { VoteButtonComponent } from './shared/vote-button/vote-button.component';
+import { SideBarComponent } from './shared/side-bar/side-bar.component';
+import { HashtagSideBarComponent } from './shared/hashtag-side-bar/hashtag-side-bar.component';
+import { PostTileComponent } from './shared/post-tile/post-tile.component';
+import { CreateHashtagComponent } from './hashtag/create-hashtag/create-hashtag.component';
+import { CreatePostComponent } from './post/create-post/create-post.component';
+import { ListHashtagsComponent } from './hashtag/list-hashtags/list-hashtags.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     SignupComponent,
-    LoginComponent
+    LoginComponent,
+    HomeComponent,
+    VoteButtonComponent,
+    SideBarComponent,
+    HashtagSideBarComponent,
+    PostTileComponent,
+    CreateHashtagComponent,
+    CreatePostComponent,
+    ListHashtagsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
     HttpClientModule,
-    NgxWebstorageModule.forRoot()
+    NgxWebstorageModule.forRoot(),
+    BrowserAnimationsModule,
+    ToastrModule.forRoot(),
+    FontAwesomeModule,
   ],
-  providers: [],
+  providers: [
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: TokenInterceptor,
+      multi: true
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
