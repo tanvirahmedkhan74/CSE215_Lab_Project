@@ -22,4 +22,6 @@ You can download and try out the backened code
 > - spring.mail.port={YOUR FAKE SMTP PORT}  
 > - spring.mail.protocol=smtp  
 
-/Angular_version.png
+# Front End - Setup
+![Angular CLI and Node Version](/Angular_version.png)
+
