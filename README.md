@@ -1,12 +1,12 @@
-# CSE215_Lab_Project :shipit:
-Group Project For Section CSE215 12L
+# MEET@NSU Spring + Angular Social Media Project :shipit:
+### Group Project For Section CSE215 12L
 
 # Head to Spring Boot Folder
-This folder contains the frontend and Backned Code Of the Project  
+### This folder contains the frontend and Backned Code Of the Project  
 
 # Setup
 You can download and try out the backened code  
-But Make sure to Change the application.properties file for Database  
+### But Make sure to Change the application.properties file for Database  
 
 # application.properties Changes:
 ## Database Configuration (MySql)
