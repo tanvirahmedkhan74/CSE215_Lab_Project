@@ -5,7 +5,7 @@
 ### This folder contains the frontend and Backned Code Of the Project  
 
 # Setup
-You can download and try out the backened code  
+### You can download and try out the Project 
 ### But Make sure to Change the application.properties file for Database  
 
 # application.properties Changes:
@@ -17,9 +17,9 @@ You can download and try out the backened code
 
 ## Change SMTP Configuration  
 > - spring.mail.host=smtp.mailtrap.io  
-> - spring.mail.username={YOUR FAKE SMTP USERNAME}  
-> - spring.mail.password={YOUR FAKE SMTP PASSWORD}  
-> - spring.mail.port={YOUR FAKE SMTP PORT}  
+> - spring.mail.username={`YOUR FAKE SMTP USERNAME`}  
+> - spring.mail.password={`YOUR FAKE SMTP PASSWORD`}  
+> - spring.mail.port={`YOUR FAKE SMTP PORT`}  
 > - spring.mail.protocol=smtp  
 
 # Front End - Setup
