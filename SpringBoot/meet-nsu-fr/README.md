@@ -1,6 +1,15 @@
-# MeetNsuFr
+# Install Node Using Nvm
+`sudo apt install curl`  
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.1.
+`curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash`  
+
+`source ~/.bashrc`  
+
+### Now install Node using nvm (Version 16.16 Latest Stable at current build time)  
+`nvm install 16.16`
+
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.1.  
+![Angular CLI and Node Version](/angular_version.png)  
 
 ## Development server
 
