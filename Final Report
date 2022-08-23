@@ -1,0 +1,202 @@
+# Main.tex
+\documentclass[12pt,a4paper]{report}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{fancyhdr}
+\usepackage{cite}
+\usepackage{framed}
+\usepackage{a4wide}
+\usepackage{float}
+\usepackage{blindtext}
+\usepackage{multicol}
+%The below Section make chapter and its name to center of the page
+\usepackage{blindtext}
+\usepackage{xpatch}
+\usepackage{mathptmx}
+\usepackage{geometry}
+ \geometry{
+ right=25mm,
+ left=35mm,
+ top=25mm,
+ bottom=25mm,
+ }
+ \newcommand{\Answer}[1]{\smash{\begin{tabular}{l} \hline #1 \\ \hline \end{tabular}\hspace*{-\tabcolsep}}}
+%  \usepackage{xcolor}
+ \usepackage[dvipsnames]{xcolor}
+ \usepackage{hyperref}
+ \hypersetup{
+    colorlinks=true,
+    linkcolor=teal,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdftitle={Overleaf Example},
+    pdfpagemode=FullScreen,
+    }
+% \usepackage{fontspec}
+\usepackage{tocloft}
+\makeatletter
+\renewcommand{\cftdot}{}
+\renewcommand{\cftchappresnum}{CHAPTER }
+\renewcommand{\cftchapaftersnum}{:}
+\renewcommand{\cftchapnumwidth}{6.5em}
+\renewcommand\cftfigindent{0pt}
+\renewcommand\cftfigpresnum{Figure\ }
+\renewcommand\cftfigaftersnum{ : }
+\renewcommand{\cftfignumwidth}{5.5em}
+\renewcommand{\cfttabpresnum}{Table\ }
+\renewcommand\cfttabaftersnum{ : }
+\renewcommand{\cfttabnumwidth}{5em}
+\makeatother
+
+
+% \setmainfont{Times New Roman}
+\makeatletter
+\xpatchcmd{\@makeschapterhead}{%
+  \Huge \bfseries  #1\par\nobreak%
+}{%
+  \Huge \bfseries\centering #1\par\nobreak%
+}{\typeout{Patched makeschapterhead}}{\typeout{patching of @makeschapterhead failed}}
+
+
+\xpatchcmd{\@makechapterhead}{%
+  \huge\bfseries \@chapapp\space \thechapter
+}{%
+  \huge\bfseries\centering \@chapapp\space \thechapter
+}{\typeout{Patched @makechapterhead}}{\typeout{Patching of @makechapterhead failed}}
+
+\makeatother
+%The above Section make chapter and its name to center of the page
+%\unwanted packages also included
+\linespread{1.5}
+\usepackage{eso-pic}
+\usepackage{xcolor}
+\usepackage[english]{babel}
+
+
+
+\begin{document}
+
+\include{title_page}
+\include{References}
+\sffamily{
+\tableofcontents
+}
+
+\include{Chapters/introduction}
+\include{Chapters/User Story}
+\include{Chapters/Solution Description}
+\include{Chapters/Advantages}
+\include{Chapters/Collaboration Plan}
+\include{Chapters/Project Schedule}
+\include{Chapters/Budgetary Price}
+\include{Chapters/Project ScreenShots}
+\include{Chapters/Conclusion}
+\include{Chapters/Appendix}
+
+\end{document}
+
+# Solution Description.tex
+\chapter{Solution Description}
+\section{Architecture}
+\sffamily{\large{
+Meet@NSU has a strong architecture as it includes Spring Boot as Back-end, Angular JS as Front-End and MySql as Database.Using REST calls, We imply the Back-end and Front end Calls}
+\\
+}
+\newpage
+\section{Back-end Overview}
+\sffamily{\large{
+\begin{itemize}
+    \item Registration and Login
+    \begin{itemize}
+        \item Registration using University E-mail Account
+        \item Verification through a Activation Code sent to the Mail
+        \item Login by using Valid Credentials
+        \item Updating account information
+    \end{itemize}
+    \item Hashtag and Post Creation
+    \begin{itemize}
+        \item Creating Hashtag for particular topic or subject
+        \item Creating post with a relevant hashtag
+        \item Attaching necessary links with the Post
+    \end{itemize}
+
+    \item Comment and Support
+    \begin{itemize}
+        \item Commenting on any Post
+        \item E-mail notification for comments
+        \item Reporting inappropriate comments
+        \item Supporting by Up Vote or Down Vote
+    \end{itemize}
+\end{itemize}
+}}
+\newpage
+\section{Front-end Overview}
+\sffamily{
+\large{
+\begin{itemize}
+    \item Home Page
+    \item Registration Page
+    \item Profile Page
+    \item Post Page
+    \item View Post Page
+    \item Hashtag View Page
+    \item Hashtag Creation Page
+    
+    \item[NOTE] \textbf{In-Future Special Updates}
+    \item Anonymous Chatting Page
+    \item Meet-a-Partner Page
+    \item All-for-All Chat Page
+    \item One-to-One Chat Page
+\end{itemize}
+} 
+}
+\newpage
+\section{Tools and Technologies}
+\sffamily{
+\large{
+\begin{itemize}
+    \item \textbf{Database  : } MYSQL
+    \item \textbf{Front-End : } Angular JS
+    \item \textbf{Back-end  : } Spring Boot with Java and Maven Plugin
+    \item \textbf{API       : } MailTrap SMTP
+\end{itemize}
+}
+}
+
+# User Story.tex
+\chapter{\sffamily User Story}
+\section{\sffamily Use Case 1}
+\sffamily{
+\textbf{Mr.String have just found about Meet@NSU}
+\begin{itemize}
+    \item String goes to Meet@NSU site
+    \item String Heads to Registration Page
+    \item String Includes required information
+    \item String gets a Authentication Token in his Mail
+    \item String's account is activated!
+    \item String Creates a Hashtag for Him
+    \item String Creates a post using that Hashtag
+    \item String Logs out and go to his Class
+\end{itemize}}
+\newpage
+\section{\sffamily User Case 2}
+\sffamily{
+\textbf{Ms.Spring is already an User}
+\begin{itemize}
+    \item Ms.Spring clicks on the log-in button.
+    \item Ms.Spring enters her credential
+    \item Ms.Spring gets an invalid Credential Error!
+    \item Ms.Spring Enters right password and login successfully
+    \item Ms.Spring Watches Mr.String's post
+    \item Ms.Spring creates a comment on Mr.String's post and tries to help him and meet with him at NSU
+    \item Mr.String watches the comment on his Email, and Replies to her comment
+    \item Ms.Spring logs out and goes to the campus to meet with Mr.String
+\end{itemize}}
+\section{\sffamily {\textbf{Wait!} There are some boundaries}}
+\sffamily{
+\begin{itemize}
+    \item If Mr/Ms Hecker do not have a Valid University Mail, They can not join Meet@NSU
+    \item You can not join the main {\color{green}CAMPUS} platform and meet other University students in the  demo Version - which will be paid feature in future upgrade
+    \item In anonymous chat, you can not force anyone to reveal their identity unless they do it on their own
+\end{itemize}
+}
