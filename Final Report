@@ -200,3 +200,17 @@ Meet@NSU has a strong architecture as it includes Spring Boot as Back-end, Angul
     \item In anonymous chat, you can not force anyone to reveal their identity unless they do it on their own
 \end{itemize}
 }
+
+
+# Project Schedule
+\chapter{Project Schedule}
+\sffamily{
+Development for the Beta Version - Phase 1\\
+Presented Through a Chart with Ratio of Days \\
+}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.25]{Images/PSche2 - Made with DesignCap.jpg}
+    \label{fig:DTU logo}
+\end{figure}
