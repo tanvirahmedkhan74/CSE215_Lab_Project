@@ -22,4 +22,5 @@ public interface HashtagMapper {
     @InheritInverseConfiguration
     @Mapping(target = "posts", ignore = true)
     Hashtag mapDtoToHashtag(HashtagDto hashtag);
+
 }
