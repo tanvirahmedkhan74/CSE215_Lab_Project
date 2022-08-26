@@ -9,8 +9,8 @@ import org.springframework.stereotype.Component;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2022-08-04T13:40:02+0600",
-    comments = "version: 1.3.1.Final, compiler: javac, environment: Java 11.0.15 (Private Build)"
+    date = "2022-08-18T01:32:48+0600",
+    comments = "version: 1.3.1.Final, compiler: javac, environment: Java 11.0.16 (Ubuntu)"
 )
 @Component
 public class HashtagMapperImpl implements HashtagMapper {
