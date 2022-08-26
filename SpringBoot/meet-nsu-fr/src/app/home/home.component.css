@@ -1,0 +1,12 @@
+.background-image{
+    background-image: url('./homwback.jpg');
+    background-size: cover;
+    background-repeat: repeat;
+    width: 300;
+    /* height: 100vh; */
+}
+
+/* .container{
+    width: auto;
+    height: 100vh;
+} */

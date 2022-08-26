@@ -6,6 +6,7 @@ import { HomeComponent } from './home/home.component';
 import { CreateHashtagComponent } from './hashtag/create-hashtag/create-hashtag.component';
 import { CreatePostComponent } from './post/create-post/create-post.component';
 import { ListHashtagsComponent } from './hashtag/list-hashtags/list-hashtags.component';
+import { ViewPostComponent } from './post/view-post/view-post.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -13,7 +14,8 @@ const routes: Routes = [
   {path: 'login', component: LoginComponent},
   {path: 'create-post', component: CreatePostComponent},
   {path: 'create-hashtag', component: CreateHashtagComponent},
-  {path: 'list-hashtags', component: ListHashtagsComponent}
+  {path: 'list-hashtags', component: ListHashtagsComponent},
+  {path: 'view-post/:id', component: ViewPostComponent}
 ];
 
 @NgModule({

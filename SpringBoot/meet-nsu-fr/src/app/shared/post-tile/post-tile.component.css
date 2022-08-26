@@ -1,11 +1,11 @@
 .post{
     --post-line-color: #ccc;    
-    border: 1px solid #ccc;
+    border: 3px solid rgba(246, 65, 10, 0.941);
     margin-top: 10px;
     margin-bottom: 10px;
     overflow: hidden;
-    background-color: rgba(255,255,255,0.8);
-    color: #878A8C;
+    background-color: rgba(1, 2, 24, 0.8);
+    color: #d8f65e;
     position: relative;
     border-radius: 4px;
     padding:5px;
@@ -29,7 +29,7 @@
 }
 
 .posturl, .postname{    
-    color: black;
+    color: rgb(247, 100, 112);
 }
 
 .hashtag-text{
@@ -39,3 +39,4 @@
 .post-text{
     margin-top: 10px;
 }
+

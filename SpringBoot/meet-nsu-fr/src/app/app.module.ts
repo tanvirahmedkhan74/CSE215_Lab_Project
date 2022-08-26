@@ -21,6 +21,8 @@ import { PostTileComponent } from './shared/post-tile/post-tile.component';
 import { CreateHashtagComponent } from './hashtag/create-hashtag/create-hashtag.component';
 import { CreatePostComponent } from './post/create-post/create-post.component';
 import { ListHashtagsComponent } from './hashtag/list-hashtags/list-hashtags.component';
+import { EditorModule, TINYMCE_SCRIPT_SRC } from '@tinymce/tinymce-angular';
+import { ViewPostComponent } from './post/view-post/view-post.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +37,8 @@ import { ListHashtagsComponent } from './hashtag/list-hashtags/list-hashtags.com
     PostTileComponent,
     CreateHashtagComponent,
     CreatePostComponent,
-    ListHashtagsComponent
+    ListHashtagsComponent,
+    ViewPostComponent
   ],
   imports: [
     BrowserModule,
@@ -46,13 +49,15 @@ import { ListHashtagsComponent } from './hashtag/list-hashtags/list-hashtags.com
     BrowserAnimationsModule,
     ToastrModule.forRoot(),
     FontAwesomeModule,
+    EditorModule
   ],
   providers: [
     {
       provide: HTTP_INTERCEPTORS,
       useClass: TokenInterceptor,
       multi: true
-    }
+    },
+    { provide: TINYMCE_SCRIPT_SRC, useValue: 'tinymce/tinymce.min.js' }
   ],
   bootstrap: [AppComponent]
 })
