@@ -7,9 +7,11 @@ import { CreateHashtagComponent } from './hashtag/create-hashtag/create-hashtag.
 import { CreatePostComponent } from './post/create-post/create-post.component';
 import { ListHashtagsComponent } from './hashtag/list-hashtags/list-hashtags.component';
 import { ViewPostComponent } from './post/view-post/view-post.component';
+import { UserProfileComponent } from './auth/user-profile/user-profile.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
+  {path: 'user-profile/:name', component: UserProfileComponent},
   {path:'sign-up', component: SignupComponent},
   {path: 'login', component: LoginComponent},
   {path: 'create-post', component: CreatePostComponent},

@@ -15,9 +15,7 @@ export class PostTileComponent implements OnInit {
   faArrowDown = faArrowDown;
   faComments = faComments;
 
-  size: Number;
   posts$ = new Array<PostModel>;
-  posts_reversed$ = new Array<PostModel>;
 
   @Input() data: Array<PostModel>;
 
