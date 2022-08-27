@@ -1,5 +1,5 @@
 package com.campus.meet.NSU.model;
-// Lombok Packeges
+
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
